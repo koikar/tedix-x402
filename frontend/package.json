@@ -1,0 +1,25 @@
+{
+  "name": "tedix",
+  "private": true,
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "build": "turbo build",
+    "dev": "turbo dev",
+    "dev:frontend": "turbo dev --filter=@tedix/frontend",
+    "check": "biome check",
+    "typecheck": "turbo typecheck"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.3.4",
+    "turbo": "^2.6.0",
+    "typescript": "5.9.3"
+  },
+  "packageManager": "bun@1.2.23",
+  "dependencies": {},
+  "trustedDependencies": [
+    "@coinbase/x402"
+  ]
+}

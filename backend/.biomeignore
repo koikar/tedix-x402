@@ -1,0 +1,21 @@
+# Dependencies
+node_modules/
+.wrangler/
+
+# Build outputs
+dist/
+build/
+out/
+
+# Environment files
+.env*
+!.env.example
+.dev.vars
+
+# Generated files
+worker-configuration.d.ts
+
+# IDE and system files
+.vscode/
+.DS_Store
+*.log

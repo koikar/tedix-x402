@@ -1,0 +1,60 @@
+{
+  "name": "tedix-backend",
+  "compatibility_date": "2025-09-24",
+  "compatibility_flags": [
+    "nodejs_compat",
+    "nodejs_compat_populate_process_env",
+  ],
+  "durable_objects": {
+    "bindings": [
+      {
+        "class_name": "TedixMCP",
+        "name": "MCP_OBJECT",
+      },
+      {
+        "class_name": "TedixAgent",
+        "name": "TEDIX_AGENT",
+      },
+    ],
+  },
+  "main": "src/index.ts",
+  "migrations": [
+    {
+      "new_sqlite_classes": ["TedixMCP"],
+      "tag": "v1",
+    },
+    {
+      "new_sqlite_classes": ["TedixAgent"],
+      "tag": "v2",
+    },
+  ],
+  "vars": {
+    "AI_SEARCH_INSTANCE": "dev-tedix",
+    "R2_BUCKET_NAME": "dev-tedix",
+  },
+  "ai": {
+    "binding": "AI",
+    "remote": true,
+  },
+  "r2_buckets": [
+    {
+      "binding": "DEV_TEDIX_BUCKET",
+      "bucket_name": "dev-tedix",
+      "remote": true,
+    },
+  ],
+  "observability": {
+    "enabled": true,
+    "head_sampling_rate": 1,
+  },
+  "triggers": {
+    "crons": ["* * * * *"],
+  },
+  "routes": [
+    {
+      "pattern": "mcp.tedi.studio",
+      "custom_domain": true,
+    },
+  ],
+  "preview_urls": false,
+}
