@@ -1,49 +1,66 @@
-# 🚀 Tedix — Modern AI-Commerce Platform
+# 🚀 Tedix — Transform Your Brand into AI-Commerce in 5 Minutes
 
-**Built with TanStack Start + Cloudflare for the AI-first future of commerce**
+**🏆 Solana x402 Hackathon Submission — MCP Server Track + CDP Embedded Wallets Challenge**
 
-> A production-ready AI-commerce platform featuring **TanStack Start**, **Cloudflare Workers**, **real-time brand intelligence**, and **ChatGPT-style interfaces** for seamless brand integration into AI conversations.
+**The future of AI commerce: Turn any brand into a white-labeled MCP server ready for ChatGPT deployment**
 
-![Platform](https://img.shields.io/badge/Platform-TanStack%20Start-blue) ![Backend](https://img.shields.io/badge/Backend-Cloudflare%20Workers-orange) ![Database](https://img.shields.io/badge/Database-Supabase%20PostgreSQL-green) ![Deployment](https://img.shields.io/badge/Deployment-Edge%20Computing-purple)
+> **Problem:** AI chats give you walls of text from random sources - Reddit, blogs, anywhere. Never official brand content.
+> **Solution:** Tedix transforms your brand into a premium MCP server with official content, branded UI components, and blockchain payments - all in 5 minutes.
 
-## 🎯 **Vision**
+![Platform](https://img.shields.io/badge/Frontend-Next.js%2015-black) ![Backend](https://img.shields.io/badge/Backend-Hono%20+%20Cloudflare-orange) ![MCP](https://img.shields.io/badge/MCP-AI%20Agent%20SDK-purple) ![Blockchain](https://img.shields.io/badge/Payments-x402%20Solana-green) ![Hackathon](https://img.shields.io/badge/Solana%20x402-Hackathon%202025-blueviolet)
 
-Transform how brands integrate into AI conversations using modern web standards. Built with **TanStack Start** for full-stack type safety, **Cloudflare Workers** for edge computing, and **real-time reactive data** for professional shopping experiences.
+## 🎯 **What is Tedix?**
 
-## 🌐 **Live Demo**
+**One URL. Five minutes. Your brand becomes an AI app.**
 
-**Experience the platform:** [http://localhost:3001/playground](http://localhost:3001/playground)
+Enter your brand URL → We scrape all official content → Generate a white-labeled MCP server → Deploy to ChatGPT → Users get official branded responses with custom UI components and premium content gated by blockchain payments.
 
-### **Try These Features:**
-- 🔍 **"nike.com"** → Real-time brand content analysis
-- 📱 **Responsive Design** → ChatGPT-style mobile interface
-- ⚡ **Live Updates** → TanStack DB reactive queries
-- 🤖 **AI Integration** → Professional AI Elements components
+## 🌟 **See It In Action**
+
+**[Watch the demo video](https://www.loom.com/share/a1a5644282854acb88db09af2aee152c):** Transform Solana into an MCP server in real-time
+
+### **How It Works:**
+1. 🔗 **Enter URL** → "solana.com"
+2. 🕷️ **Smart Scraping** → Official docs, blog posts, brand content
+3. 🤖 **MCP Generation** → White-labeled server with your branding
+4. 💬 **ChatGPT Ready** → Deploy and start selling premium AI experiences
+5. 💳 **x402 Payments** → Blockchain-powered premium content access
 
 ---
 
-## ✨ **Modern Architecture**
+## 🏗️ **Tech Stack Architecture**
 
-### 🏗️ **Frontend Stack**
-- **TanStack Start** — Full-stack React with file-based routing
-- **TanStack Form** — Type-safe reactive forms with validation
-- **TanStack DB** — Client-side reactive database with live queries
-- **TanStack Query** — Server state management and caching
-- **AI Elements** — Official ChatGPT-style UI components
-- **Vite + TypeScript** — Modern build system with HMR
+### 🎨 **Frontend — Next.js 16 + MCP UI**
+- **Next.js 16** — App Router with server components
+- **MCP UI Components** — Branded, customizable AI chat interfaces
+- **x402 Coinbase CDP SDK** — Blockchain payment integration
+- **TypeScript** — End-to-end type safety
+- **Tailwind CSS** — Rapid UI development
 
-### ⚡ **Backend Stack**
-- **Cloudflare Workers** — Serverless edge computing
-- **MCP Architecture** — Model Context Protocol for AI tools
-- **Cloudflare AI Search** — Managed vector database with auto-indexing
-- **Cloudflare R2** — Object storage for brand content
-- **Firecrawl API** — Premium content extraction and mapping
+### ⚡ **Backend — Hono + Cloudflare Workers**
+- **Hono Framework** — Ultra-fast web framework for edge
+- **Cloudflare Workers** — Global edge computing
+- **AI Agents SDK** — MCP server implementation
+- **x402 MCP** — Paid tools with blockchain validation
+- **TypeScript** — Full type safety across the edge
 
-### 💾 **Database & State**
-- **Supabase PostgreSQL** — Primary database with real-time features
-- **pgvector Extension** — Vector storage for embeddings
-- **TanStack DB Collections** — Client-side reactive data
-- **Real-time Subscriptions** — Live data synchronization
+### 🧠 **AI & Content Intelligence**
+- **Firecrawl API** — Premium brand content extraction & mapping
+- **Cloudflare AI Search** — Vector database with auto-embeddings
+- **Cloudflare R2** — Object storage for scraped content
+- **Cloudflare Vectorize** — Semantic search capabilities
+- **OpenAI Integration** — GPT-4 powered responses
+
+### 💾 **Storage & Database**
+- **Cloudflare R2 Buckets** — Organized brand content (`/brands/{domain}/`)
+- **Cloudflare AI Search** — Managed vector database with embeddings
+- **Supabase PostgreSQL** — Brand data and content source references
+
+---
+
+## 🏆 **Hackathon Submission**
+
+### **[Solana x402 Hackathon](https://solana.com/x402/hackathon)**
 
 ---
 
@@ -103,108 +120,113 @@ bun run deploy
 
 ---
 
-## 🏗️ **Architecture Overview**
+## 📂 **Project Structure**
 
-```mermaid
-graph TD
-    A[TanStack Start Frontend] --> B[TanStack Form + DB]
-    B --> C[Server Routes API]
-    C --> D[Cloudflare Workers]
-    D --> E[MCP Tools Architecture]
-    D --> F[Cloudflare AI Search]
-    D --> G[Cloudflare R2 Storage]
-    E --> H[Brand Discovery Pipeline]
-    F --> I[Vector Embeddings]
-    G --> J[Content Assets]
-
-    K[Supabase PostgreSQL] --> L[Real-time Subscriptions]
-    L --> B
-
-    M[Firecrawl API] --> D
+```
+tedix-x402-hack/
+├── 🎨 frontend/                    # Next.js 16 App
+│   ├── apps/
+│   │   └── frontend/
+│   │       ├── app/                # App Router pages
+│   │       ├── components/         # React components
+│   │       ├── lib/                # Core utilities
+│   │       └── mcp-ui/            # MCP UI components
+│   └── packages/
+│       └── x402-mcp/              # x402 payment SDK
+│
+├── ⚡ backend/                      # Cloudflare Worker
+│   ├── src/
+│   │   ├── index.ts               # Hono app entry
+│   │   ├── mcp/                   # MCP server tools
+│   │   │   ├── ui.ts              # UI resources
+│   │   │   └── tools.ts           # AI tools
+│   │   ├── brand-discovery/       # Content pipeline
+│   │   │   ├── firecrawl.ts      # Scraping service
+│   │   │   └── processor.ts      # Data transform
+│   │   └── services/
+│   │       ├── ai-search.ts      # Vector search
+│   │       └── r2.ts              # Storage
+│   └── wrangler.toml              # Cloudflare config
+│
+├── 🎯 widget/                      # Embeddable widget
+│   └── src/                       # Widget components
+│
+└── 📝 docs/
+    ├── CLAUDE.md                  # AI instructions
+    └── README.md                  # This file
 ```
 
-### **Data Flow**
-1. **User Input** → TanStack Form validates domain
-2. **Server Route** → Proxies to Cloudflare Worker
-3. **Content Extraction** → Firecrawl processes brand content
-4. **Storage** → Direct upload to Cloudflare R2
-5. **Indexing** → AI Search auto-generates embeddings
-6. **Real-time Updates** → TanStack DB live queries sync results
-7. **AI Integration** → MCP tools provide ChatGPT-style interactions
+## 🏗️ **Architecture Flow**
+
+```mermaid
+graph LR
+    A[Brand URL Input] --> B[Firecrawl Extraction]
+    B --> C[Content Processing]
+    C --> D[R2 Storage]
+    C --> E[AI Search Indexing]
+
+    F[User Query] --> G[MCP Server]
+    G --> H[AI Search]
+    H --> I[GPT Response]
+    I --> J[Branded UI]
+
+    K[Premium Content] --> L[x402 Payment]
+    L --> M[Blockchain Validation]
+    M --> N[Access Granted]
+```
+
+### **Pipeline Steps**
+1. **Brand Discovery** → Enter domain, scrape with Firecrawl
+2. **Content Storage** → Organize in R2 buckets by brand
+3. **Vector Indexing** → Auto-embed with Cloudflare AI Search
+4. **MCP Generation** → Create white-labeled server config
+5. **ChatGPT Deploy** → Ready for AI conversations
+6. **Premium Access** → x402 blockchain payments for gated content
+7. **Branded UI** → Custom components with logo & colors
 
 ---
 
 ## 🎨 **Key Features**
 
-### ⚡ **Modern Web Development**
-- **Full-stack TypeScript** with end-to-end type safety
-- **File-based routing** with TanStack Start conventions
-- **Reactive forms** with real-time validation and feedback
-- **Hot module replacement** for instant development updates
-- **Edge deployment** with global Cloudflare distribution
+### 🚀 **5-Minute Brand Transformation**
+- **One-click setup** → Enter URL, get MCP server
+- **Automatic content mapping** → Docs, blog, products, services
+- **Smart categorization** → AI-powered content organization
+- **White-label ready** → Your brand, your colors, your logo
+- **Instant deployment** → ChatGPT marketplace ready
 
-### 🤖 **AI-Powered Brand Intelligence**
-- **Automated content discovery** via Firecrawl extraction
-- **Smart categorization** with ML-powered content analysis
-- **Vector search** using Cloudflare AI Search
-- **Real-time progress tracking** with live query updates
-- **ChatGPT-style interface** using official AI Elements
+### 💡 **Revolutionary AI Commerce**
+- **Official content only** → No more Reddit or random sources
+- **Branded UI components** → Custom chat interfaces
+- **Premium content gates** → Blockchain-powered monetization
+- **Real-time updates** → Live brand intelligence
+- **Multi-tenant architecture** → Unlimited brands
 
-### 🌐 **Production-Ready Deployment**
-- **Cloudflare Pages** for frontend hosting
-- **Cloudflare Workers** for backend processing
-- **Global edge computing** for optimal performance
-- **Automatic scaling** with serverless architecture
-- **Built-in CDN** for asset delivery
-
-### 📱 **Professional UI/UX**
-- **ChatGPT-style interface** with authentic animations
-- **Responsive design** optimized for mobile and desktop
-- **Real-time feedback** during brand analysis
-- **Professional loading states** and error handling
-- **Accessible components** with proper ARIA support
+### 🔐 **x402 Blockchain Payments (Multi-Chain)**
+- **Solana + Base chains** → Choose your blockchain
+- **Premium tool access** → Gate advanced features
+- **Usage-based pricing** → Pay per query or subscription
+- **Instant validation** → On-chain verification
+- **Coinbase CDP SDK** → Enterprise-grade infrastructure
+- **Adapted x402-mcp** → Enhanced multi-chain support
 
 ---
 
-## 🧱 **Project Structure**
+## 🚀 **Use Cases**
 
-### Frontend (TanStack Start)
-```
-frontend/src/
-├── app/
-│   ├── __root.tsx              # Root layout with providers
-│   ├── index.tsx               # Home page
-│   ├── playground.tsx          # Brand analysis playground
-│   ├── api/
-│   │   ├── chat.ts            # AI chat server route
-│   │   └── scan.ts            # Brand discovery server route
-│   └── privacy.tsx            # Legal pages
-├── components/
-│   ├── ai-elements/           # ChatGPT-style UI components
-│   ├── simple-chat/           # Chat interface components
-│   └── ui/                    # Shared UI components
-├── lib/
-│   ├── server-functions.ts    # TanStack Start server functions
-│   ├── collections.ts         # TanStack DB collections
-│   └── env.ts                 # Environment configuration
-└── utils/supabase/            # Database utilities
-```
+### **For Brands**
+- 🏢 **Enterprise SaaS** → "Get official Stripe API answers in ChatGPT"
+- 🛍️ **E-commerce** → "Shop Nike products directly in AI chat"
+- 📚 **Documentation** → "Access Solana docs with code examples"
+- 💼 **B2B Services** → "Premium consulting through AI agents"
+- 🎓 **Education** → "Sell courses and tutorials via chat"
 
-### Backend (Cloudflare Workers)
-```
-backend/src/
-├── index.ts                   # Main worker entry point
-├── mcp/
-│   ├── ui.ts                 # MCP UI resource handler
-│   └── r2-upload-handler.ts  # R2 storage operations
-├── brand-discovery/
-│   ├── firecrawl-service.ts  # Content extraction
-│   ├── url-prioritizer.ts    # Smart URL selection
-│   └── content-processor.ts  # Data transformation
-├── services/
-│   └── cloudflare-ai.ts      # AI Search integration
-└── webhooks/                 # External integrations
-```
+### **For Developers**
+- 🔧 **API Integration** → MCP tools for your platform
+- 📖 **Documentation Assistant** → AI-powered tech support
+- 💻 **Code Examples** → Context-aware programming help
+- 🚀 **Developer Tools** → Premium SDK access
+- 🤝 **Community Support** → Monetized expert answers
 
 ---
 
@@ -212,41 +234,52 @@ backend/src/
 
 ### Frontend (.env.local)
 ```env
-# TanStack Start Configuration
-VITE_MCP_URL=https://your-worker.workers.dev
-VITE_NETWORK=mainnet
+# Next.js Configuration
+NEXT_PUBLIC_API_URL=http://localhost:8787
+NEXT_PUBLIC_NETWORK=mainnet
 
-# Supabase Configuration
-VITE_SUPABASE_URL=https://your-project.supabase.co
-VITE_SUPABASE_ANON_KEY=your_anon_key
+# x402 Payments
+NEXT_PUBLIC_X402_API_KEY=your_x402_key
+NEXT_PUBLIC_COINBASE_PROJECT_ID=your_project_id
 
 # Development
 NODE_ENV=development
 ```
 
 ### Backend (wrangler.jsonc)
-```json
+```jsonc
 {
-  "name": "tedix-worker",
+  "name": "tedix-backend",
   "main": "src/index.ts",
-  "compatibility_date": "2024-11-01",
-  "vars": {
-    "ENVIRONMENT": "production"
-  },
-  "secrets": [
-    "OPENAI_API_KEY",
-    "FIRECRAWL_API_KEY",
-    "AI_SEARCH_API_TOKEN"
+  "compatibility_date": "2025-09-24",
+  "compatibility_flags": [
+    "nodejs_compat",
+    "nodejs_compat_populate_process_env"
   ],
-  "ai": {
-    "binding": "AI"
+
+  // Durable Objects for MCP state
+  "durable_objects": {
+    "bindings": [
+      { "name": "MCP_OBJECT", "class_name": "TedixMCP" },
+      { "name": "TEDIX_AGENT", "class_name": "TedixAgent" }
+    ]
   },
-  "r2_buckets": [
-    {
-      "binding": "R2_BUCKET",
-      "bucket_name": "tedix-brand-content"
-    }
-  ]
+
+  // AI and Storage
+  "ai": { "binding": "AI", "remote": true },
+  "r2_buckets": [{
+    "binding": "DEV_TEDIX_BUCKET",
+    "bucket_name": "dev-tedix"
+  }],
+
+  // Environment variables
+  "vars": {
+    "AI_SEARCH_INSTANCE": "dev-tedix",
+    "R2_BUCKET_NAME": "dev-tedix"
+  }
+
+  // Secrets (via wrangler secret put):
+  // OPENAI_API_KEY, FIRECRAWL_API_KEY, X402_SECRET_KEY
 }
 ```
 
@@ -268,219 +301,3 @@ cd backend && bun run dev
 bun run build:check
 # → Full TypeScript validation
 ```
-
-### **Code Quality**
-```bash
-# Linting and formatting
-bun run lint          # Biome linting
-bun run format        # Biome formatting
-
-# Type safety
-bun run typecheck     # TypeScript checking
-```
-
-### **Testing**
-```bash
-# Unit tests
-bun run test          # Vitest testing
-
-# E2E tests
-bun run test:e2e      # Playwright testing
-```
-
----
-
-## 🎯 **Core Capabilities**
-
-### **Brand Discovery Pipeline**
-- **Domain Analysis** → Automated content extraction
-- **URL Mapping** → Smart sitemap discovery
-- **Content Categorization** → ML-powered classification
-- **Asset Processing** → Image and media optimization
-- **Search Indexing** → Vector embedding generation
-
-### **Real-time Data Synchronization**
-```typescript
-// TanStack DB live queries
-const { data: brands } = useLiveQuery(
-  (q) => {
-    if (!brandsCollection) return undefined;
-    return q
-      .from({ brand: brandsCollection })
-      .where(({ brand }) => eq(brand.domain, currentDomain))
-      .limit(1);
-  },
-  [currentDomain]
-);
-```
-
-### **Type-safe API Integration**
-```typescript
-// TanStack Start server routes
-export const Route = createFileRoute("/api/scan")({
-  server: {
-    handlers: {
-      POST: async ({ request }) => {
-        const { domain } = await request.json();
-        // Type-safe processing
-        return new Response(JSON.stringify(result));
-      },
-    },
-  },
-});
-```
-
----
-
-## 📊 **Performance Metrics**
-
-### **Development Experience**
-- **Hot Reload**: < 200ms (Vite HMR)
-- **Build Time**: < 30 seconds (TanStack Start)
-- **Type Checking**: Real-time (TypeScript)
-- **Bundle Size**: < 500KB optimized
-
-### **Production Performance**
-- **Page Load**: < 500ms (Cloudflare Edge)
-- **API Response**: < 1s (Worker processing)
-- **Database Query**: < 100ms (Supabase)
-- **Real-time Updates**: < 200ms (Live queries)
-
-### **Scalability**
-- **Concurrent Users**: 10,000+ (Global edge)
-- **Content Processing**: 100+ domains/hour
-- **Storage Capacity**: 1TB+ (R2 buckets)
-- **Search Index**: 1M+ documents
-
----
-
-## 🔄 **MCP Tools Integration**
-
-### **Available Tools**
-```typescript
-interface MCPTools {
-  "cloudflare-ai-search": {
-    description: "Search brand content with AI responses";
-    parameters: { query: string; brand?: string };
-  };
-  "browse-merchandise": {
-    description: "Interactive product catalog";
-    parameters: { category?: string; brand?: string };
-  };
-  "purchase-merchandise": {
-    description: "E-commerce transactions";
-    parameters: { product_id: string; quantity: number };
-  };
-}
-```
-
-### **AI Chat Integration**
-- **Streaming responses** with AI SDK
-- **Tool calling** with MCP protocol
-- **Context awareness** with brand data
-- **Professional interface** with AI Elements
-
----
-
-## 🚀 **Deployment Strategy**
-
-### **Development → Production**
-```bash
-# 1. Local development
-bun run dev
-
-# 2. Build optimization
-bun run build
-
-# 3. Cloudflare deployment
-wrangler pages deploy dist/client  # Frontend
-wrangler deploy                    # Backend
-
-# 4. Domain configuration
-# Configure custom domains in Cloudflare
-```
-
-### **Infrastructure**
-- **Frontend**: Cloudflare Pages (Global CDN)
-- **Backend**: Cloudflare Workers (Edge Computing)
-- **Database**: Supabase (Managed PostgreSQL)
-- **Storage**: Cloudflare R2 (Object Storage)
-- **Search**: Cloudflare AI Search (Vector Database)
-
----
-
-## 🛠️ **Development Commands**
-
-### Frontend Commands
-```bash
-bun run dev          # Start development server
-bun run build        # Production build
-bun run build:check  # Build with type checking
-bun run lint         # Code linting
-bun run format       # Code formatting
-bun run preview      # Preview production build
-```
-
-### Backend Commands
-```bash
-bun run dev          # Local worker development
-bun run deploy       # Deploy to Cloudflare
-bun run typecheck    # TypeScript validation
-bun run test         # Run tests
-```
-
----
-
-## 📚 **Documentation**
-
-- **[CLAUDE.md](./CLAUDE.md)** — Implementation instructions and architecture
-- **[PRD.md](./PRD.md)** — Product requirements and technical specifications
-- **[API Documentation](./docs/api.md)** — Complete API reference
-- **[Deployment Guide](./docs/deployment.md)** — Production deployment instructions
-
----
-
-## 🤝 **Contributing**
-
-We welcome contributions to improve the platform! This is built with modern web standards and designed for extensibility.
-
-### **Development Setup**
-1. Fork the repository
-2. Create a feature branch
-3. Follow the TypeScript and Biome conventions
-4. Test your changes thoroughly
-5. Submit a pull request
-
-### **Areas for Contribution**
-- 🎨 **UI/UX improvements** with TanStack components
-- ⚡ **Performance optimizations** for edge computing
-- 🧠 **AI feature enhancements** with new MCP tools
-- 🔧 **Developer experience** improvements
-- 📱 **Mobile optimizations** and responsive design
-
----
-
-## 📄 **License**
-
-MIT License - See [LICENSE](./LICENSE) for details.
-
----
-
-## 🙏 **Acknowledgments**
-
-**Built with modern web standards for production deployment**
-
-- **[TanStack](https://tanstack.com/)** — Powerful full-stack React framework
-- **[Cloudflare](https://cloudflare.com/)** — Edge computing and global infrastructure
-- **[Supabase](https://supabase.com/)** — Open-source Firebase alternative
-- **[Vite](https://vitejs.dev/)** — Fast build tooling and development
-- **[AI SDK](https://sdk.vercel.ai/)** — AI integration and streaming
-- **[Firecrawl](https://firecrawl.dev/)** — Premium web content extraction
-
----
-
-**🌟 Star this repo if you believe in modern web development! 🌟**
-
-[![Deploy to Cloudflare](https://img.shields.io/badge/Deploy%20to-Cloudflare-orange?style=for-the-badge&logo=cloudflare)](https://dash.cloudflare.com/)
-[![Built with TanStack](https://img.shields.io/badge/Built%20with-TanStack-blue?style=for-the-badge)](https://tanstack.com/)
-[![TypeScript](https://img.shields.io/badge/TypeScript-Ready-blue?style=for-the-badge&logo=typescript)](https://typescriptlang.org/)
